@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manchikanti Likitha Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>My Portfolio Website</h1>
+  <header>
+    <h1>Manchikanti Likitha</h1>
+    <p>AI & Python Developer</p>
+  </header>
 
+  <section class="about">
     <h2>About Me</h2>
     <p>
-        Hello! My name is Likitha.<br>
-        I am a Python Developer Intern.<br>
-        I am learning Flask and Web Development.
+      Passionate AI developer interested in Machine Learning,
+      NLP, APIs, and Automation.
     </p>
+  </section>
 
-    <h2>Contact Me</h2>
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>Flask / FastAPI</li>
+      <li>HTML / CSS / JavaScript</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
 
-    <form method="POST">
-        <label>Name:</label><br>
-        <input type="text" name="name" required><br><br>
+  <section class="projects">
+    <h2>Projects</h2>
 
-        <label>Email:</label><br>
-        <input type="email" name="email" required><br><br>
+    <div class="project">
+      <h3>Fake News Detector</h3>
+      <p>AI-powered fake news detection system using NLP.</p>
+    </div>
 
-        <button type="submit">Submit</button>
-    </form>
+    <div class="project">
+      <h3>Voice Controlled AI Assistant</h3>
+      <p>Python voice assistant with automation features.</p>
+    </div>
 
-    <br>
-    <p>{{ message }}</p>
+    <div class="project">
+      <h3>Rule-Based Chatbot</h3>
+      <p>Interactive chatbot using NLP techniques.</p>
+    </div>
+
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+    <p>GitHub: github.com/manchikantilikitha4-sys</p>
+  </section>
 
 </body>
 </html>
